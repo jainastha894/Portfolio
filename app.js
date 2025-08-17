@@ -1,10 +1,12 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 const app = express();
+const port=process.env.PORT || 3000
 app.use(express.static('public'));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -38,6 +40,6 @@ app.post("/contact", (req, res) => {
 app.get('/', (req, res) => {
   res.render('index', { title: 'My Portfolio' });
 });
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('Server is running on port 3000');
 });
