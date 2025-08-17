@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio - Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles/index.css">
+
+
+</head>
+
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Animated Background Particles -->
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <div class="particle w-2 h-2" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle w-1 h-1" style="left: 20%; animation-delay: 2s;"></div>
+        <div class="particle w-3 h-3" style="left: 30%; animation-delay: 4s;"></div>
+        <div class="particle w-2 h-2" style="left: 40%; animation-delay: 1s;"></div>
+        <div class="particle w-1 h-1" style="left: 50%; animation-delay: 3s;"></div>
+        <div class="particle w-2 h-2" style="left: 60%; animation-delay: 5s;"></div>
+        <div class="particle w-1 h-1" style="left: 70%; animation-delay: 2.5s;"></div>
+        <div class="particle w-3 h-3" style="left: 80%; animation-delay: 1.5s;"></div>
+        <div class="particle w-2 h-2" style="left: 90%; animation-delay: 3.5s;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold accent-gradient bg-clip-text text-transparent">My Portfolio</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home"
+                            class="text-gray-300 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-all duration-300">Home</a>
+                        <a href="#about"
+                            class="text-gray-300 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-all duration-300">About</a>
+                        <a href="#skills"
+                            class="text-gray-300 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-all duration-300">Skills</a>
+                        <a href="#projects"
+                            class="text-gray-300 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-all duration-300">Projects</a>
+                        <a href="#certifications"
+                            class="text-gray-300 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-all duration-300">Certifications</a>
+                        <a href="#contact"
+                            class="accent-gradient px-6 py-2 rounded-full text-white font-semibold hover:shadow-lg transition-all duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-purple-400">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-900/95 backdrop-blur-sm border-t border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-300 hover:text-purple-400">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-purple-400">About</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-300 hover:text-purple-400">Skills</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-300 hover:text-purple-400">Projects</a>
+                <a href="#certifications" class="block px-3 py-2 text-gray-300 hover:text-purple-400">Certifications</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-300 hover:text-purple-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="dark-gradient min-h-screen flex items-center justify-center pt-16 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="floating mb-8 lg:hidden">
+                        <div
+                            class="w-40 h-40 mx-auto accent-gradient rounded-full flex items-center justify-center shadow-2xl glow-effect">
+                            <span class="text-7xl">👨‍💻</span>
+                        </div>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                        Hi, I'm <span class="neon-text typing-cursor">Astha Jain</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-4">
+                        <span class="accent-gradient bg-clip-text text-transparent font-semibold">Full Stack
+                            Developer</span>
+                    </p>
+                    <p class="text-lg text-gray-400 mb-8 max-w-2xl">
+                        BCA 3rd Year Student passionate about creating innovative web solutions.
+                        Experienced in 16+ technologies across 6 programming languages with 5+ completed projects.
+                    </p>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-4 mb-8 max-w-md mx-auto lg:mx-0">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-purple-400">5+</div>
+                            <div class="text-sm text-gray-400">Projects</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-purple-400">20+</div>
+                            <div class="text-sm text-gray-400">Skills</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-purple-400">3+</div>
+                            <div class="text-sm text-gray-400">Certifications</div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button onclick="scrollToSection('projects')"
+                            class="accent-gradient px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all duration-300 glow-hover">
+                            🚀 View My Work
+                        </button>
+                        <button onclick="scrollToSection('contact')"
+                            class="border-2 border-purple-500 text-purple-400 px-8 py-4 rounded-full font-semibold hover:bg-purple-500 hover:text-white transition-all duration-300">
+                            💬 Let's Connect
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hidden lg:block">
+                    <div class="floating">
+                        <div class="relative">
+                            <div
+                                class="w-80 h-80 accent-gradient rounded-full flex items-center justify-center shadow-2xl glow-effect mx-auto">
+                                <span class="text-9xl">👨‍💻</span>
+                            </div>
+                            <!-- Code snippets floating around -->
+                            <div
+                                class="absolute -top-4 -left-8 code-block p-3 rounded-lg text-xs text-green-400 rotate-12">
+                                <div>const dev = {</div>
+                                <div>&nbsp;&nbsp;passion: true</div>
+                                <div>}</div>
+                            </div>
+                            <div
+                                class="absolute -bottom-4 -right-8 code-block p-3 rounded-lg text-xs text-blue-400 -rotate-12">
+                                <div>&lt;FullStack&gt;</div>
+                                <div>&nbsp;&nbsp;Developer</div>
+                                <div>&lt;/FullStack&gt;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-4">
+                    <span class="accent-gradient bg-clip-text text-transparent">About Me</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    A passionate developer on a journey to master the art of full-stack development,
+                    currently pursuing BCA while building real-world applications and expanding my technical expertise.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="card-3d card-gradient p-8 rounded-2xl text-center border border-gray-700">
+                    <div class="text-5xl mb-4">🎓</div>
+                    <h3 class="text-xl font-semibold mb-2 text-purple-400">Education</h3>
+                    <p class="text-gray-300">BCA 3rd Year</p>
+                    <p class="text-gray-400 text-sm">Computer Applications</p>
+                    <p class="text-gray-400 text-sm mt-2">Expected: 2026</p>
+                </div>
+
+                <div class="card-3d card-gradient p-8 rounded-2xl text-center border border-gray-700">
+                    <div class="text-5xl mb-4">💼</div>
+                    <h3 class="text-xl font-semibold mb-2 text-purple-400">Projects</h3>
+                    <p class="text-gray-300">5-6 Completed</p>
+                    <p class="text-gray-400 text-sm">Full Stack Applications</p>
+                    <p class="text-gray-400 text-sm mt-2">Production Ready</p>
+                </div>
+
+                <div class="card-3d card-gradient p-8 rounded-2xl text-center border border-gray-700">
+                    <div class="text-5xl mb-4">🏆</div>
+                    <h3 class="text-xl font-semibold mb-2 text-purple-400">Certifications</h3>
+                    <p class="text-gray-300">3 Earned</p>
+                    <p class="text-gray-400 text-sm">Including Featured</p>
+                    <p class="text-gray-400 text-sm mt-2">Full Stack Certificate</p>
+                </div>
+
+                <div class="card-3d card-gradient p-8 rounded-2xl text-center border border-gray-700">
+                    <div class="text-5xl mb-4">⚡</div>
+                    <h3 class="text-xl font-semibold mb-2 text-purple-400">Experience</h3>
+                    <p class="text-gray-300">2+ Years</p>
+                    <p class="text-gray-400 text-sm">Self-taught Journey</p>
+                    <p class="text-gray-400 text-sm mt-2">Continuous Learning</p>
+                </div>
+            </div>
+
+            <!-- Detailed About -->
+            <div class="card-gradient p-8 rounded-2xl border border-gray-700">
+                <h3 class="text-2xl font-semibold mb-6 text-center">My Development Journey</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold text-purple-400 mb-4">🚀 What Drives Me</h4>
+                        <p class="text-gray-300 mb-4">
+                            I'm passionate about solving real-world problems through code. Every project I work on
+                            is an opportunity to learn something new and push the boundaries of what's possible with
+                            technology.
+                        </p>
+                        <p class="text-gray-300">
+                            My goal is to become a versatile full-stack developer who can handle everything from
+                            user interface design to complex backend architecture.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-purple-400 mb-4">💡 Current Focus</h4>
+                        <ul class="text-gray-300 space-y-2">
+                            <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Advanced Node.js
+                                patterns</li>
+                            <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Cloud deployment
+                            </li>
+                            <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Database
+                                optimization techniques</li>
+                            <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Get real world
+                                projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-4">
+                    <span class="accent-gradient bg-clip-text text-transparent">Technical Skills</span>
+                </h2>
+                <p class="text-xl text-gray-300">16+ skills mastered across 6 programming languages</p>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-semibold text-center mb-8">Programming Languages</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <div class="skill-orb p-6 rounded-2xl text-center">
+                        <div class="text-4xl mb-3">🟨</div>
+                        <h4 class="font-semibold text-purple-400">JavaScript</h4>
+                        <p class="text-sm text-gray-400">Advanced</p>
+                        <div class="mt-2 bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-orb p-6 rounded-2xl text-center">
+                        <div class="text-4xl mb-3">🟨</div>
+                        <h4 class="font-semibold text-purple-400">Java</h4>
+                        <p class="text-sm text-gray-400">Advanced</p>
+                        <div class="mt-2 bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-orb p-6 rounded-2xl text-center">
+                        <div class="text-4xl mb-3">🟨</div>
+                        <h4 class="font-semibold text-purple-400">C</h4>
+                        <p class="text-sm text-gray-400">Intermediate</p>
+                        <div class="mt-2 bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-orb p-6 rounded-2xl text-center">
+                        <div class="text-4xl mb-3">🟨</div>
+                        <h4 class="font-semibold text-purple-400">C#</h4>
+                        <p class="text-sm text-gray-400">Beginner</p>
+                        <div class="mt-2 bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-orb p-6 rounded-2xl text-center">
+                        <div class="text-4xl mb-3">🐍</div>
+                        <h4 class="font-semibold text-purple-400">Python</h4>
+                        <p class="text-sm text-gray-400">Learning</p>
+                        <div class="mt-2 bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend & Backend Skills -->
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="card-gradient p-8 rounded-2xl border border-gray-700">
+                    <h3 class="text-2xl font-semibold mb-6 text-purple-400 flex items-center">
+                        <span class="text-3xl mr-3">🎨</span> Frontend Development
+                    </h3>
+                    <div class="space-y-4">
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">ejs</span>
+                            <span class="text-purple-400 font-semibold">Expert</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 95%"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">HTML5 & CSS3</span>
+                            <span class="text-purple-400 font-semibold">Advanced</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 85%"></div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">JavaScript</span>
+                            <span class="text-purple-400 font-semibold">Advanced</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 90%"></div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Bootstrap framework</span>
+                            <span class="text-purple-400 font-semibold">Intermediate</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 75%"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">React.js</span>
+                            <span class="text-purple-400 font-semibold">Basic</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 40%"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Responsive Web Design</span>
+                            <span class="text-purple-400 font-semibold">Basic</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-gradient p-8 rounded-2xl border border-gray-700">
+                    <h3 class="text-2xl font-semibold mb-6 text-purple-400 flex items-center">
+                        <span class="text-3xl mr-3">⚙️</span> Backend & Database
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Node.js</span>
+                            <span class="text-purple-400 font-semibold">Advanced</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 80%"></div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Express.js</span>
+                            <span class="text-purple-400 font-semibold">Advanced</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 85%"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">OAuth</span>
+                            <span class="text-purple-400 font-semibold">Advanced</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 85%"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Password hashing using Bcrypt</span>
+                            <span class="text-purple-400 font-semibold">Advanced</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 85%"></div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Cookies and Session handling using Passport.js</span>
+                            <span class="text-purple-400 font-semibold">Intermediate</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 75%"></div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">MySQL</span>
+                            <span class="text-purple-400 font-semibold">Intermediate</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 70%"></div>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">REST APIs (API Integration and Devlopment)</span>
+                            <span class="text-purple-400 font-semibold">Advanced</span>
+                        </div>
+                        <div class="bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button id="toggleSkills"
+                    class="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full shadow-lg transition duration-300">
+                    Show More Skills
+                </button>
+            </div>
+            <!-- Hidden extra skills -->
+            <div id="extraSkills" class="mt-12 hidden">
+                <div class="grid lg:grid-cols-1 gap-12">
+                    <div class="card-gradient p-8 rounded-2xl border border-gray-700">
+                        <h3 class="text-2xl font-semibold mb-6 text-purple-400 flex items-center">
+                            <span class="text-3xl mr-3">📱</span> Other Skills
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-300">Java Servlets</span>
+                                <span class="text-purple-400 font-semibold">Intermediate</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2">
+                                <div class="progress-bar rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-300">JDBC</span>
+                                <span class="text-purple-400 font-semibold">Intermediate</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2">
+                                <div class="progress-bar rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-300">OOPs</span>
+                                <span class="text-purple-400 font-semibold">Intermediate</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2">
+                                <div class="progress-bar rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-300">Wordpress</span>
+                                <span class="text-purple-400 font-semibold">Intermediate</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2">
+                                <div class="progress-bar rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-300">Microsoft Excel</span>
+                                <span class="text-purple-400 font-semibold">Basic</span>
+                            </div>
+                            <div class="bg-gray-700 rounded-full h-2">
+                                <div class="progress-bar rounded-full" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="mt-16">
+            <h3 class="text-3xl font-semibold text-center mb-8">Tools & Technologies</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="skill-orb px-6 py-3 rounded-full text-sm font-medium">Git & GitHub</span>
+                <span class="skill-orb px-6 py-3 rounded-full text-sm font-medium">VS Code</span>
+                <span class="skill-orb px-6 py-3 rounded-full text-sm font-medium">Postman</span>
+                <span class="skill-orb px-6 py-3 rounded-full text-sm font-medium">PostgreSql</span>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-4">
+                    <span class="accent-gradient bg-clip-text text-transparent">Featured Projects</span>
+                </h2>
+                <p class="text-xl text-gray-300">A showcase of my recent full-stack development work</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <!-- Featured Project 1 -->
+                <div class="card-3d card-gradient rounded-2xl overflow-hidden border border-gray-700 glow-hover">
+                    <div
+                        class="h-64 bg-gradient-to-br from-green-600 via-teal-600 to-blue-600 flex items-center justify-center">
+                        <img src="./images/hiremap.png" alt="">
+                        <div
+                            class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            ⭐ Featured
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-purple-400">HireMap</h3>
+                        <p class="text-gray-300 mb-4">
+                            Full-stack application with user authentication, submit resume facility, admin dashboard,
+                            informative interface,
+                            hosted on Render.com
+
+                        </p>
+                        <p>Currently working on it to improve</p>
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-gray-400 mb-2">Key Features:</h4>
+                            <ul class="text-sm text-gray-300 space-y-1">
+                                <li>• Resume Submission Facilty</li>
+                                <li>• Admin Dashboard</li>
+                                <li>• Informative Interface</li>
+                                <li>• Data Security by password hashing</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">Oauth</span>
+                            <span class="bg-green-900 text-green-300 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-purple-900 text-purple-300 px-3 py-1 rounded-full text-sm">ejs, CSS,
+                                Js</span>
+                            <span class="bg-yellow-900 text-yellow-300 px-3 py-1 rounded-full text-sm">Express</span>
+                            <span class="bg-green-900 text-yellow-300 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                            <span class="bg-blue-900 text-yellow-300 px-3 py-1 rounded-full text-sm">Cookies and
+                                Session</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <button
+                                class="accent-gradient px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                                <a href="https://hiremap.onrender.com" target="_blank">🔗 Live Demo</a>
+                            </button>
+                            <button
+                                class="border border-purple-500 text-purple-400 px-6 py-2 rounded-lg hover:bg-purple-500 hover:text-white transition-all">
+                                <a href="https://github.com/jainastha894/hiremap" target="_blank">📁 GitHub</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Project 2 -->
+                <div class="card-3d card-gradient rounded-2xl overflow-hidden border border-gray-700 glow-hover">
+                    <div
+                        class="h-64 bg-gradient-to-br from-green-600 via-teal-600 to-blue-600 flex items-center justify-center">
+                        <img src="./images/unitech.png" alt="">
+                        <div
+                            class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            ⭐ Featured
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-purple-400">uniTech Engineering Works</h3>
+                        <p class="text-gray-300 mb-4">
+                            Real website made for uniTech Engineering works, a company that provides engineering
+                            solutions.
+                            Its a full-stack application made for them with admin dashboard, real time contact facility,
+                            not hosted yet.
+                        </p>
+
+                        <p>Will Be Hosted Soon.</p>
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-gray-400 mb-2">Key Features:</h4>
+                            <ul class="text-sm text-gray-300 space-y-1">
+                                <li>• Real-time Collaboration</li>
+                                <li>• Direct Contact Facilty through website</li>
+                                <li>• Real time Reviews</li>
+                                <li>• Responsive Website</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-green-900 text-green-300 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-orange-900 text-orange-300 px-3 py-1 rounded-full text-sm">ejs</span>
+                            <span class="bg-red-900 text-red-300 px-3 py-1 rounded-full text-sm">PostgreSql</span>
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">Express.js</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <button
+                                class="border border-purple-500 text-purple-400 px-6 py-2 rounded-lg hover:bg-purple-500 hover:text-white transition-all">
+                                <a href="https://github.com/jainastha894/UniTech" target="_blank">📁 GitHub</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects Grid -->
+            <h5 class="text-3xl mb-4">
+                <span class="accent-gradient bg-clip-text text-transparent">Other Projects</span>
+            </h5>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
+                <div class="card-3d card-gradient rounded-xl overflow-hidden border border-gray-700">
+                    <div class="h-40 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                        <iframe src="https://drive.google.com/file/d/1fh5oEu0iSEicHpaPn2lfwmuSR6gKuS8H/preview"
+                            width="100%" height="100%" allow="autoplay" class="rounded-t-xl">
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-purple-400">My Book Shelf</h3>
+                        <p class="text-gray-300 text-sm mb-3">A Full Stack web app in which users can store, organize,
+                            and rate the Books they've Read.
+                            Uses third party API to fetch book covers and stores data in Postgresql.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="bg-orange-900 text-orange-300 px-2 py-1 rounded text-xs">EJS CSS3 JS</span>
+                            <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-xs">REST API</span>
+                            <span class="bg-yellow-900 text-yellow-300 px-2 py-1 rounded text-xs">PostgreSQL</span>
+                            <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-xs">Node.js</span>
+                            <span class="bg-orange-900 text-orange-300 px-2 py-1 rounded text-xs">Express</span>
+                        </div>
+
+                        <button class="text-purple-400 hover:text-purple-300 font-medium text-sm"><a
+                                href="https://github.com/jainastha894/MyBookShelf" target="_blank">📁
+                                GitHub</a></button> <br>
+
+                    </div>
+                </div>
+
+                <div class="card-3d card-gradient rounded-xl overflow-hidden border border-gray-700">
+                    <div class="h-40 bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center">
+                        <iframe src="https://drive.google.com/file/d/1fh5oEu0iSEicHpaPn2lfwmuSR6gKuS8H/preview"
+                            width="100%" height="100%" allow="autoplay" class="rounded-t-xl">
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-purple-400">Artist Aura</h3>
+                        <p class="text-gray-300 text-sm mb-3">This project showcase my skills in third party API
+                            Integration(last.fm). User can search songs filtered by their favourite artists. data is
+                            collected from API. </p>
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-xs">EJS CSS JS</span>
+                            <span class="bg-green-900 text-green-300 px-2 py-1 rounded text-xs">API</span>
+                        </div>
+                        <button class="text-purple-400 hover:text-purple-300 font-medium text-sm"><a
+                                href="https://github.com/jainastha894/ArtistAura" target="_blank">📁
+                                GitHub</a></button> <br>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="https://github.com/jainastha894" target="_blank">
+                    <button
+                        class="accent-gradient px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all duration-300 glow-hover">
+                        🚀 View All Projects on GitHub
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-4">
+                    <span class="accent-gradient bg-clip-text text-transparent">Certifications & Achievements</span>
+                </h2>
+                <p class="text-xl text-gray-300">Professional certifications validating my technical expertise</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Featured Certificate -->
+                <div class="md:col-span-2 card-3d card-gradient rounded-2xl p-8 border border-gray-700 glow-effect">
+                    <div class="flex items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-20 h-20 accent-gradient rounded-2xl flex items-center justify-center text-3xl">
+                                🏆
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="text-2xl font-bold text-purple-400">Full Stack Web Development</h3>
+                                <span class="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold">⭐
+                                    FEATURED</span>
+                            </div>
+                            <p class="text-gray-400 mb-3">Comprehensive certification covering Full stack development
+                                using Node.js
+                            </p>
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-400 mb-2">Skills Covered:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-xs">React.js</span>
+                                    <span class="bg-green-900 text-green-300 px-2 py-1 rounded text-xs">Node.js</span>
+                                    <span class="bg-purple-900 text-purple-300 px-2 py-1 rounded text-xs">Password
+                                        hashing</span>
+                                    <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-xs">OAuth</span>
+                                    <span
+                                        class="bg-yellow-900 text-yellow-300 px-2 py-1 rounded text-xs">Express.js</span>
+                                    <span class="bg-green-900 text-green-300 px-2 py-1 rounded text-xs">Cookies and
+                                        Session</span>
+                                    <span class="bg-red-900 text-red-300 px-2 py-1 rounded text-xs">REST APIs</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 text-sm text-gray-400">
+                                <span>📅 Issued: 2025</span>
+                                <span>🏢 Provider: Udemy(Angela Yu)</span> <br>
+                                <a style="text-decoration: underline;"
+                                    href="https://www.udemy.com/certificate/UC-bec6ea30-0eac-49f1-ac64-4749bdadc36c/">
+                                    🔗Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Certificates -->
+                <div class="space-y-6">
+                    <div class="card-3d card-gradient rounded-xl p-6 border border-gray-700">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-xl">
+                                🎯
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-purple-400">Data Analytics Essentials</h3>
+                                <p class="text-sm text-gray-400">Mostly Theory based</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-400">📅 2024 • 🏢 Cisco Networking Academy <br>
+                            <a
+                                href="https://www.credly.com/badges/4e016559-f0c7-47e0-a9dd-4980811c2e16">🔗Certificate</a>
+                        </p>
+                    </div>
+
+                    <div class="card-3d card-gradient rounded-xl p-6 border border-gray-700">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center text-xl">
+                                🎨
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-purple-400">Introduction to data Science</h3>
+                                <p class="text-sm text-gray-400">Completly theory based, introductory course</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-400">📅 2024 • 🏢 Cisco Networking Academy <br>
+                            <a
+                                href="https://www.credly.com/badges/cdb27c2f-4a99-446c-8ca9-bfe957c585ec/print">🔗Certificate</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Path -->
+            <div class="mt-16 card-gradient rounded-2xl p-8 border border-gray-700">
+                <h3 class="text-2xl font-semibold mb-6 text-center text-purple-400">Current Learning Path</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 accent-gradient rounded-full flex items-center justify-center text-2xl mx-auto mb-3">
+                            🐍
+                        </div>
+                        <h4 class="font-semibold text-purple-400 mb-2">Python Programming</h4>
+                        <p class="text-sm text-gray-400">Python</p>
+                        <div class="mt-2 bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 accent-gradient rounded-full flex items-center justify-center text-2xl mx-auto mb-3">
+
+                        </div>
+                        <h4 class="font-semibold text-purple-400 mb-2">Deployment on AWS</h4>
+                        <p class="text-sm text-gray-400">AWS s3 </p>
+                        <div class="mt-2 bg-gray-700 rounded-full h-2">
+                            <div class="progress-bar rounded-full" style="width: 15%"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 dark-gradient relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-4 neon-text">Let's Build Something Amazing</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Ready to turn your ideas into reality? I'm always excited to work on new projects
+                    and collaborate with fellow developers and innovative teams.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-16 h-16 accent-gradient rounded-2xl flex items-center justify-center text-2xl glow-effect">
+                                📧
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-purple-400">Email Me</h3>
+                                <p class="text-gray-300">jainastha894@gmail.com</p>
+                                <p class="text-sm text-gray-400">I'll respond within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-16 h-16 accent-gradient rounded-2xl flex items-center justify-center text-2xl glow-effect">
+                                💼
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-purple-400">LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/astha-jain-4363a0286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blank" class="text-gray-300">🔗Connect</a>
+                                <p class="text-sm text-gray-400">Let's expand our networks</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-16 h-16 accent-gradient rounded-2xl flex items-center justify-center text-2xl glow-effect">
+                                🐙
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-purple-400">GitHub</h3>
+                                <a href="https://github.com/jainastha894" target="_blank"
+                                    class="text-gray-300">🔗Visit</a>
+                                <p class="text-sm text-gray-400">Open source contributions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <h3 class="text-xl font-semibold mb-4 text-purple-400">What I'm Looking For:</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> Internship
+                                opportunities</li>
+                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> Freelance projects
+                            </li>
+                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> Open source
+                                collaborations</li>
+                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> Mentorship
+                                opportunities</li>
+                            <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> Tech community
+                                connections</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-gradient p-8 rounded-2xl border border-gray-700 glow-effect">
+                    <h3 class="text-2xl font-semibold mb-6 text-purple-400">Send a Message</h3>
+                    <form action="/contact" method="post" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                            <input name="name" type="text"
+                                class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-purple-500 focus:outline-none transition-colors"
+                                placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                            <input name="email" type="email"
+                                class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-purple-500 focus:outline-none transition-colors"
+                                placeholder="your@email.com" required>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                            <textarea name="Message" rows="4"
+                                class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-purple-500 focus:outline-none transition-colors"
+                                placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full accent-gradient py-4 rounded-lg font-semibold hover:shadow-xl transition-all duration-300 glow-hover">
+                            🚀 Send Message
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jainastha894@gmail.com" target="_blank"
+                        class="accent-gradient px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all duration-300 glow-hover">
+                        📧 Send Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/astha-jain-4363a0286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        class="border-2 border-purple-500 text-purple-400 px-8 py-4 rounded-full font-semibold hover:bg-purple-500 hover:text-white transition-all duration-300">
+                        💼 LinkedIn Profile
+                    </a>
+                    <a href="https://github.com/jainastha894" target="_blank"
+                        class="border-2 border-purple-500 text-purple-400 px-8 py-4 rounded-full font-semibold hover:bg-purple-500 hover:text-white transition-all duration-300">
+                        🐙 GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold accent-gradient bg-clip-text text-transparent mb-4">My Portfolio</h3>
+                <p class="text-gray-400 mb-6">Building the future, one line of code at a time.</p>
+
+                <div class="border-t border-gray-800 pt-8">
+                    <p class="text-gray-500">&copy; 2025 Astha Jain. All rights reserved.</p>
+                    <p class="text-gray-600 text-sm mt-2">Crafted using modern web technologies</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById("toggleSkills");
+        const extraSkills = document.getElementById("extraSkills");
+
+        btn.addEventListener("click", () => {
+            extraSkills.classList.toggle("hidden");
+
+            // Change button text dynamically
+            if (extraSkills.classList.contains("hidden")) {
+                btn.textContent = "Show More Skills";
+            } else {
+                btn.textContent = "Show Less Skills";
+            }
+        });
+    </script>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            const navHeight = 64;
+            const elementPosition = element.offsetTop - navHeight;
+
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Add smooth scrolling to navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                scrollToSection(targetId);
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Enhanced typing animation
+        const typingElement = document.querySelector('.typing-cursor');
+        const names = ['Astha Jain', 'a Developer', 'a BCA Student'];
+        let nameIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            const currentName = names[nameIndex];
+
+            if (isDeleting) {
+                typingElement.textContent = currentName.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentName.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentName.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                nameIndex = (nameIndex + 1) % names.length;
+            }
+
+            const typingSpeed = isDeleting ? 100 : 150;
+            setTimeout(typeEffect, typingSpeed);
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.card-3d, .skill-orb').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Progress bar animation
+        const progressBars = document.querySelectorAll('.progress-bar');
+        const progressObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bar = entry.target;
+                    const width = bar.style.width;
+                    bar.style.width = '0%';
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, 200);
+                }
+            });
+        }, observerOptions);
+
+        progressBars.forEach(bar => {
+            progressObserver.observe(bar);
+        });
+
+        // Enhanced scroll effects
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-2xl');
+            } else {
+                nav.classList.remove('shadow-2xl');
+            }
+        });
+
+       
+
+        // Start animations
+        setTimeout(typeEffect, 1000);
+
+        // Add random particle generation
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle w-1 h-1';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = '0s';
+            particle.style.animationDuration = (Math.random() * 3 + 5) + 's';
+            document.querySelector('.fixed.inset-0').appendChild(particle);
+
+            setTimeout(() => {
+                particle.remove();
+            }, 8000);
+        }
+
+        // Generate particles periodically
+        setInterval(createParticle, 2000);
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9706dfec63e9182b',t:'MTc1NTQwOTYyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
