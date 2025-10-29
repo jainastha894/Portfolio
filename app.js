@@ -22,7 +22,7 @@ app.post("/contact", (req, res) => {
   const mailOptions = {
     from: email,
     to: 'jainastha894@gmail.com',
-    subject: `Message from ${name} via portfolio`,
+    subject: `This message is cam from your portfolio you uploaded on render. someone wants to connect you. Message from ${name} via portfolio`,
     text: message,
   }
   transporter.sendMail(mailOptions, (error, info) => {
